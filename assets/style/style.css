@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: fixed;
+  color: #77838f;
+  font-family: "Oxygen", sans-serif;
+}
+
+/* Global Style */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: 100;
+}
+hr {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Custom Style */
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Message Top  */
+.message__top {
+  margin: 10px 0px 10px 10px;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.people__slider {
+  overflow-x: scroll;
+  display: flex;
+  gap: 20px;
+}
+.people {
+  height: 63px;
+  width: 46px;
+}
+.people__add {
+  height: 46px;
+  width: 46px;
+  background-color: #e3e2e5;
+  border-radius: 50%;
+}
+.people__image__border {
+  height: 46px;
+  width: 46px;
+  background-image: linear-gradient(#ff2c55, #5855d6);
+  border-radius: 50%;
+  position: relative;
+}
+.people__image {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border: 1px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.people__name {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.main__message__body {
+  margin: 0px 10px 0 10px;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+}
+.chat {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sender__image {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sender__image img {
+  height: 55px;
+  width: 55px;
+}
+.msg {
+  width: 70%;
+  margin: 10px;
+}
+.sender {
+  font-size: 18px;
+  color: #5855d6;
+}
+.msg__txt {
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.msg__side__body {
+  width: 15%;
+  height: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.unread__msg {
+  display: none;
+}
+
+.unread .unread__msg {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #5855d6;
+  color: white;
+  font-size: 16px;
+}
+.unread .msg {
+  color: #5855d6;
+  font-weight: 700;
+}
